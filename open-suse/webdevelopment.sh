@@ -13,8 +13,8 @@ git config --global user.email "lucassouzavieiraengcomp@gmail.com"
 echo "PHP Environment"
 sudo zypper install -y php7 php7-mysql apache2-mod_php7 \
         php7-APCu php7-pdo php7-dba php7-fastcgi php7-devel \
-        php7-pgsql php7-fpm php7-opcache \
-        php7-memcached php7-gd php7-zip php7-json \
+        php7-pgsql php7-fpm php7-opcache php7-openssl \
+        php7-memcached php7-gd php7-zip php7-json php7-phar \
         php7-mbstring php7-xmlrpc php7-uuid php7-mysql
 
 sudo a2enmod php7
