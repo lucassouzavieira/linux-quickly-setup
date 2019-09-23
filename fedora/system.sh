@@ -32,7 +32,7 @@ sudo dnf install -y gstreamer1-plugin-openh264 \
         gstreamer1-plugins-ugly gstreamer1-plugins-ugly-free
 
 sudo dnf config-manager --add-repo=http://negativo17.org/repos/fedora-spotify.repo
-sudo dnf install spotify-client
+sudo dnf install -y spotify-client
 
 # Development Tools (C/C++/Java/Haskell)
 echo "Development tools (C/C++/Java/Haskell)"
@@ -44,7 +44,7 @@ sudo dnf group install -y "Java Development"
 sudo dnf group install -y "Haskell"
 
 # Golang
-sudo dnf install golang
+sudo dnf install -y golang
 mkdir -p $HOME/go
 echo 'export GOPATH=$HOME/go' >> $HOME/.bashrc
 source $HOME/.bashrc

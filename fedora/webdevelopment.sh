@@ -15,6 +15,10 @@ sudo dnf install -y php php-common php-pecl-apcu php-cli \
         php-pecl-memcached php-gd \
         php-mbstring php-mcrypt php-xml
 
+# NodeJS Environment
+echo "NodeJS"
+sudo dnf install -y node
+
 # Python Environment
 echo "Python Environment"
 sudo dnf install -y python-devel
