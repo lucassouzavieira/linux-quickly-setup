@@ -13,7 +13,8 @@ sudo dnf install -y php php-common php-pecl-apcu php-cli \
         php-pear php-pdo php-mysqlnd \
         php-pgsql php-pecl-mongodb php-pecl-memcache \
         php-pecl-memcached php-gd \
-        php-mbstring php-mcrypt php-xml
+        php-mbstring php-mcrypt php-xml \
+        php-zip php-intl php-xmlrpc php-soap
 
 # NodeJS Environment
 echo "NodeJS"
