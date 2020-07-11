@@ -5,7 +5,7 @@ echo "Configuring $(uname -r) environment"
 sudo zypper update
 
 # Hostname
-sudo hostnamectl set-hostname r5s
+sudo hostnamectl set-hostname er22g
 
 # Packman repositories
 sudo zypper ar -p 1 -f -n packman http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/ packman
@@ -16,7 +16,8 @@ sudo zypper install -y rhythmbox gimp tlp \
         vlc ntfs-3g \
         fuse-exfat youtube-dl htop \
         screenfetch \
-        unzip p7zip flameshot
+        unzip p7zip flameshot \
+        gparted pavucontrol
 
 # Enable TLP
 sudo tlp start
@@ -45,4 +46,4 @@ sudo zypper in -t pattern devel_python3
 sudo zypper in -t pattern devel_ruby
 
 # Golang
-sudo zypper in go go-doc
+sudo zypper in -y go go-doc
