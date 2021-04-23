@@ -15,7 +15,8 @@ sudo zypper install -y php7 php7-mysql apache2-mod_php7 \
         php7-APCu php7-pdo php7-dba php7-fastcgi php7-devel \
         php7-pgsql php7-fpm php7-opcache php7-openssl \
         php7-memcached php7-gd php7-zip php7-json php7-phar \
-        php7-mbstring php7-xmlrpc php7-uuid php7-mysql
+        php7-mbstring php7-xmlrpc php7-uuid php7-mysql \
+        php7-curl php7-fileinfo php7-intl
 
 sudo a2enmod php7
 
@@ -26,8 +27,6 @@ sudo zypper install -y python3-virtualenv
 
 # Ruby Environment
 echo "Ruby Environment"
-sudo zypper ar http://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_Leap_15.0/ devel:languages:ruby:extensions 
-sudo zypper refresh
 sudo zypper install -y automake gdbm-devel libyaml-devel ncurses-devel readline-devel zlib-devel ruby ruby-devel
 gem install rails
 
